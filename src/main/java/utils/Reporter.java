@@ -25,7 +25,7 @@ public abstract class Reporter extends AbstractTestNGCucumberTests{
 	
 	@BeforeSuite
 	public void startReport() {
-		reporter = new ExtentHtmlReporter("./reports/result.html");
+		reporter = new ExtentHtmlReporter("./result.html");
 		reporter.setAppendExisting(true); 
 		extent = new ExtentReports();
 		extent.attachReporter(reporter);
